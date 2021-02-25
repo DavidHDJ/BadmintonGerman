@@ -84,5 +84,23 @@
     </div>
   </div>
 </div>
+
+<script>
+$(document).ready(function(){
+  $("main").load("/sites/" + 'main' + ".html", function() {
+    window.history.pushState({"html":$("main").html(),"pageTitle":"BBG Sport"},"", "?p=" + title_name);
+    $('.nav-link').each(function() {
+      $(this).removeClass("active");
+    });
+    $(this).addClass("active");
+    $("main").append('<div id="stage" class="running"><div class="ball-arc"><div class="shadow"></div></div><div class="ball-arc"><div class="ball"><img class="tennis" src="https://cdn1.iconfinder.com/data/icons/ball-1/32/Ball_sport_badminton_shuttle_shuttlecock-512.png"></div></div></div>');
+    $('li[data-href]').click(function(){
+      $('html, body').animate({
+        scrollTop: ($('#' + $(this).data("href")).first().offset().top)
+      },500);
+    });
+  });
+});
+</script>
 </body>
 </html>
