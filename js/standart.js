@@ -17,7 +17,7 @@ $(document).ready(function(){
     $("main").html('<div class="center"><div class="loadingio-spinner-bean-eater-uc7wonlv5n"><div class="ldio-ekm3r3yczkq"><div><div></div><div></div><div></div></div><div><div></div><div></div><div></div></div></div></div></div>');
     var title_name = $(this).data("href");
     $("main").load("/sites/" + $(this).data("href") + ".html", function() {
-      window.history.pushState({"html":$("main").html(),"pageTitle":"BBG Sport"},"", "?p=" + title_name);
+      window.history.pushState({"html":$("main").html(),"pageTitle":"BBG Sport"},"", "index.html?p=" + title_name);
       $('.nav-link').each(function() {
         $(this).removeClass("active");
       });
@@ -34,7 +34,7 @@ $(document).ready(function(){
     $("main").html('<div class="center"><div class="loadingio-spinner-bean-eater-uc7wonlv5n"><div class="ldio-ekm3r3yczkq"><div><div></div><div></div><div></div></div><div><div></div><div></div><div></div></div></div></div></div>');
     var title_name = getUrlParameter("p");
     $("main").load("/sites/" + getUrlParameter("p") + ".html", function() {
-      window.history.pushState({"html":$("main").html(),"pageTitle":"BBG Sport"},"", "?p=" + title_name);
+      window.history.pushState({"html":$("main").html(),"pageTitle":"BBG Sport"},"", "index.html?p=" + title_name);
       $('.nav-link').each(function() {
         $(this).removeClass("active");
       });
