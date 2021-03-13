@@ -1,4 +1,4 @@
-DirectoryIndex index.html
+DirectoryIndex main.html
 Options -Indexes
 
 ErrorDocument 403 /fehler.php?error=403

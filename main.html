@@ -38,10 +38,18 @@
 </div>
 </header>
 <main role="main" class="inner cover">
-<h1 class="cover-heading">Willkommen</h1>
-<p class="lead">Diese Webseite dient für den Sportunterricht als Präsentation und ist in Kürze erreichbar</p>
-<p class="lead">
-</p>
+  <div id="wellcome">
+    <h1 class="cover-heading">Willkommen</h1>
+    <p class="lead">Diese Webseite dient als Präsentation im Sportunterricht</p>
+    <p class="lead">
+    </p>
+  </div>
+  <div id="auswahl">
+    <a type="button" href="index.html?p=main" class="btn btn-primary btn-lg btn-block">Schlägerhaltung</a>
+    <a type="button" href="index.html?p=technik" class="btn btn-primary btn-lg btn-block">Techniken</a>
+    <a type="button" href="index.html?p=regeln" class="btn btn-primary btn-lg btn-block">Regeln</a>
+    <a type="button" href="index.html?p=badmintonzuhause" class="btn btn-primary btn-lg btn-block">Übungen für Zuhause</a>
+  </div>
 </main>
 <footer class="mastfoot mt-auto">
 <div class="inner">
@@ -49,5 +57,18 @@
 </div>
 </footer>
 </div>
+<style>
+#auswahl{
+  animation: auswahl 4s;
+  opacity: 1;
+}
+@keyframes auswahl {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  75% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+</style>
+
 </body>
 </html>
