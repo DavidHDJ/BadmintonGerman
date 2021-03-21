@@ -13,7 +13,7 @@ $(document).ready(function(){
     });
     $($('[data-list="' + $(this).parent()[0].id + '"]')[$(this).data("order")]).addClass("active");
   });
-  $(".nav-link").click(function (){
+  $(".nav-link[data-href]").click(function (){
     $("main").html('<div class="center"><div class="loadingio-spinner-bean-eater-uc7wonlv5n"><div class="ldio-ekm3r3yczkq"><div><div></div><div></div><div></div></div><div><div></div><div></div><div></div></div></div></div></div>');
     var title_name = $(this).data("href");
     $("main").load("/sites/" + $(this).data("href") + ".html", function() {
